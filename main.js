@@ -11,14 +11,14 @@
 
 /**
  * Item
- * @typedef Item
+ * @class Item
  * @property {String} link URL address
  * @property {String} created_time Created date and time (ISO format)
  * @property {Number} reactions Number of reactions (likes etc.)
  */
 /**
  * Photo
- * @typedef Photo
+ * @class Photo
  * @property {Item} album Photo album
  * @extends Item
  */
@@ -30,18 +30,18 @@ let photos = [];
 
 /**
  * Facebook API access token
- * @type {String}
+ * @constant {String}
  * @see https://developers.facebook.com/tools/explorer/
  */
 const ACCESS_TOKEN = 'INSERT_ACCESS_TOKEN_HERE';
 /**
  * Facebook blocks too frequent API calls
- * @type {Number}
+ * @constant {Number}
  */
 const TIMEOUT = 20000;
 /**
  * Facebook API URL address with API version
- * @type {String}
+ * @constant {String}
  */
 const API_URL = 'https://graph.facebook.com/v3.1/';
 
