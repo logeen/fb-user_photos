@@ -2,7 +2,7 @@
 
 This script obtains all user's photos list from Facebook (see `photos` variable).
 
-Sorting photos by number of reactions (likes etc.):
+**Example.** Sorting photos by number of reactions (likes etc.):
 ```js
 photos.sort((a, b) =>
     b.reactions + b.album.reactions - a.reactions - a.album.reactions ||
