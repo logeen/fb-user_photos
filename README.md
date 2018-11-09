@@ -22,9 +22,6 @@ photos.sort((a, b) =>
 | created_time | `String` | Created date and time (ISO format) |
 | reactions | `Number` | Number of reactions (likes etc.) |
 
-### new Item()
-Item
-
 ## Photo ⇐ `Item`
 - **Kind**: class
 - **Extends**: `Item`
@@ -34,9 +31,6 @@ Item
 | Name | Type | Description |
 | --- | --- | --- |
 | album | `Item` | Photo album |
-
-### new Photo()
-Photo
 
 ## photos : `Photo[]`
 Obtained photos list will be available here
