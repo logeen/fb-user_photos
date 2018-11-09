@@ -1,4 +1,4 @@
-# Facebook User Photos
+# FB User Photos
 
 This script obtains all user's photos list from Facebook (see `photos` variable).
 
