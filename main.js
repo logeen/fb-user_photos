@@ -1,5 +1,6 @@
 /**
- * This script obtains all user's photos list from Facebook (see photos variable).
+ * This script obtains all user's photos list from Facebook and sort them by achieved reactions (likes ets.).
+ * @see photos
  * @file
  */
 
