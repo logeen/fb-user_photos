@@ -1,12 +1,6 @@
 /**
- * This script obtains all user's photos list from Facebook
+ * This script obtains all user's photos list from Facebook (see photos variable).
  * @file
- * @example <caption>Sorting photos by number of reactions (likes etc.)</caption>
- * photos.sort((a, b) =>
- *     b.reactions + b.album.reactions - a.reactions - a.album.reactions ||
- *     b.reactions - a.reactions ||
- *     new Date(a.created_time) - new Date(b.created_time)
- * );
  */
 
 /**
@@ -88,6 +82,13 @@ const parseAlbums = data => {
                 load(data.paging.next, parseAlbums);
             } else {
                 console.log('END ALBUMS');
+                photos.sort((a, b) =>
+                    (b.reactions && b.reactions + b.album.reactions) - (a.reactions && a.reactions + a.album.reactions) ||
+                    b.reactions - a.reactions ||
+                    b.album.reactions - a.album.reactions ||
+                    new Date(a.created_time) - new Date(b.created_time)
+                );
+                console.log(photos);
             }
         });
     }
